@@ -1,10 +1,10 @@
-# Método Rufar
+# Bateria do zero ao pro
 
-Escola de bateria pessoal que roda no navegador e instala no celular. Tem currículo do iniciante ao avançado, partitura que toca junto, metrônomo e um professor que ouve seu treino pelo microfone. Também registra sua evolução.
+**Método Rufar** é uma escola de bateria grátis que roda no navegador e instala no celular. Tem currículo do iniciante ao avançado, partitura que toca junto, metrônomo e um professor que ouve seu treino pelo microfone. Também registra sua evolução.
 
 Não precisa de servidor, de conta nem de mensalidade. Seus dados ficam no seu aparelho.
 
-**Abrir o app:** https://josuenino33.github.io/metodo-rufar/ (depois de ativar o GitHub Pages, veja abaixo).
+**Abrir o app:** https://josuenino33.github.io/bateria-do-zero-ao-pro/
 
 ## O que tem
 
@@ -44,8 +44,8 @@ A chave fica só no seu aparelho e não vai para o backup nem para o repositóri
 
 ## Publicar no GitHub Pages
 
-1. No repositório [josuenino33/metodo-rufar](https://github.com/josuenino33/metodo-rufar): **Settings → Pages → Build and deployment → Source: Deploy from a branch**, branch `main`, pasta `/ (root)`, e clique em Save.
-2. Em um ou dois minutos o app fica em https://josuenino33.github.io/metodo-rufar/.
+1. No repositório [josuenino33/bateria-do-zero-ao-pro](https://github.com/josuenino33/bateria-do-zero-ao-pro): **Settings → Pages → Build and deployment → Source: Deploy from a branch**, branch `main`, pasta `/ (root)`, e clique em Save.
+2. Em um ou dois minutos o app fica em https://josuenino33.github.io/bateria-do-zero-ao-pro/.
 3. A cada `git push` na `main`, o GitHub Pages publica a versão nova sozinho.
 
 Não há etapa de compilação: o GitHub Pages serve os arquivos como estão.
