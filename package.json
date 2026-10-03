@@ -1,0 +1,12 @@
+{
+  "name": "metodo-rufar",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Escola de bateria pessoal: currículo completo, metrônomo, professor que ouve pelo microfone e registro de evolução.",
+  "scripts": {
+    "validate": "node tools/validate-curriculum.mjs",
+    "icons": "node tools/make-icons.mjs",
+    "serve": "python -m http.server 8080"
+  }
+}
