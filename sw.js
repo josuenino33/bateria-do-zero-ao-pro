@@ -1,6 +1,6 @@
 // Modo offline: guarda o app no aparelho para abrir sem internet.
 // Ao mudar qualquer arquivo do app, aumente VERSION para os aparelhos baixarem a versão nova.
-const VERSION = 'rufar-2.0.0';
+const VERSION = 'rufar-2.0.1';
 const ASSETS = [
   './', 'index.html', 'manifest.webmanifest', 'css/app.css',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/icon-maskable-512.png', 'icons/apple-touch-icon.png', 'icons/favicon-32.png',

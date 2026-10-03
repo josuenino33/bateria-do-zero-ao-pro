@@ -141,7 +141,12 @@ export const Engine = (() => {
       if (tr && tr.on && barsPlayed % Math.max(1, tr.every) === 0 && bpm < tr.max) { bpm = Math.min(tr.max, bpm + tr.step); emit({ type: 'bpm', bpm }); }
     }
   }
-  function tick() { const c = AudioEng.ctx; if (!c) return; while (nextT < c.currentTime + 0.12) { schedule(); advance(); } }
+  function tick() {
+    const c = AudioEng.ctx; if (!c) return;
+    while (nextT < c.currentTime + 0.12) { schedule(); advance(); }
+    // com a tela apagada as animações param; descarta os passos que já passaram para a fila não crescer
+    if (document.hidden && queue.length > 256) queue = queue.filter(q => q.t > c.currentTime);
+  }
   function draw() { const c = AudioEng.ctx; while (queue.length && queue[0].t <= c.currentTime) emit({ type: 'step', ...queue.shift() }); if (playing) raf = requestAnimationFrame(draw); }
   async function reqWake() { try { wake = await navigator.wakeLock?.request('screen'); } catch { wake = null; } }
   function start(p, opts, who) {
